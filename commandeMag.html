@@ -3,22 +3,28 @@
 	<head>
 		<title></title>
 		<meta charset="utf-8">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<h1>Commande magasin</h1>
 		<br>
 		<label>Nom du magasin : </label><input id="shopName" type="text" name="nameShop">
-		<button onclick="addCommande()">Valider</button>
-		<p style="color: #FF0000" id="error"></p>
+		<button id="valid" onclick="addCommande()">Valider</button>
+		<div id="errordiv"></div>
+			<p style="color: #FF0000 " class="error">Veuillez saisir un nom de magasin</p>
 
 		<script type="text/javascript">
+			/*TODO a mettre dans un autre fichier
+			 * + faire le style
+			 */
+			$('.error').hide();
 
 			function addCommande(){
 				if($('#shopName').val() === "" || $('#shopName').val() === null){
-					alert("Veuillez saisir un nom de magasin");
+					$('.error').show();
 				}
 				else{
+					$('.error').hide();
 					for(let i = 0; i < 1000; i++){
 						console.log("Magasin " + $('#shopName').val() + " Commande : " + i);
 					}
