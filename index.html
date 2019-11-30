@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gestionnaire de commande</title>
+		<meta charset="utf-8">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <header>
+        <div class="row">
+            <h1>Commande magasin</h1>
+        </div>
+    </header>
+	<body>
+        <div class="row">
+            <table style="float: left; white-space: 50%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>N° commande</th>
+                        <th>Produit</th>
+                        <th>Magasin</th>
+                        <th>Etat</th>
+                        <th>Validation</th>
+                        <th>Annulation</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- TODO : requete ajax + boucle de traitement dans le tbody
+                                function des boutons suivant et précédents
+                                style -->
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="scales" name="scales" checked>
+                        </td>
+                        <td>0000001</td>
+                        <td>Linguine</td>
+                        <td>Auchan</td>
+                        <td>0</td>
+                        <td>
+                            <button class="favorite styled" type="button">ACCEPTER</button>
+                        </td>
+                        <td>
+                            <button class="favorite styled" type="button">REFUSER</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table style="width: auto;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>N° Commande</th>
+                        <th>Produit</th>
+                        <th>Quantité</th>
+                        <th>Etape suivante</th>
+                        <th>Etape précédente</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" id="scales" name="scales" checked>
+                        </td>
+                        <td>0000002</td>
+                        <td>Pasta</td>
+                        <td>98</td>
+                        <td>1</td>
+                        <td>
+                            <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                        </td>
+                        <td>
+                            <button class="favorite styled" type="button">ETAPE PRECEDENTE</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <table style="float: left; white-space: 50%;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>N° commande</th>
+                        <th>Produit</th>
+                        <th>Magasin</th>
+                        <th>Etat</th>
+                        <th>Validation</th>
+                        <th>Annulation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" checked>
+                            </td>
+                            <td>0000002</td>
+                            <td>Pasta</td>
+                            <td>98</td>
+                            <td>2</td>
+                            <td>
+                                <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                            </td>
+                            <td>
+                                <button class="favorite styled" type="button">ETAPE PRECEDENTE</button>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+            <table style="width: auto;">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>N° commande</th>
+                        <th>Produit</th>
+                        <th>Magasin</th>
+                        <th>Etat</th>
+                        <th>Validation</th>
+                        <th>Annulation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>
+                                <input type="checkbox" id="scales" name="scales" checked>
+                            </td>
+                            <td>0000002</td>
+                            <td>Pasta</td>
+                            <td>98</td>
+                            <td>3</td>
+                            <td>
+                                <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                            </td>
+                            <td>
+                                <button class="favorite styled" type="button">ENVOYER</button>
+                            </td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+    </body>
+    <footer>
+        <div>Développer par CECOTTI Alessandro HALLEUX Alexandre VIANDEZ Gregory</div>
+    </footer>
+</html>
