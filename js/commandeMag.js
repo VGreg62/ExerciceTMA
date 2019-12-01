@@ -1,11 +1,11 @@
 function addCommande(){
-	if($('#shopName').val() === "" || $('#shopName').val() === null){
+	if($('#nameShop').val() === "" || $('#nameShop').val() === null){
 		$('.error').removeClass("hide");
 	}
 	else{
 		$('.error').addClass("hide");
 		for(let i = 0; i < 1000; i++){
-			console.log("Magasin " + $('#shopName').val() + " Commande : " + i);
+			console.log("Magasin " + $('#nameShop').val() + " Commande : " + i);
 		}
 	}
 }
