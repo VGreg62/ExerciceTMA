@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Commande Produit Magasin</title>
 		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/commandeMag.js"></script>
 	</head>
 	<body>
-		<h1>Commande magasin</h1>
-		<br>
-		<label>Nom du magasin : </label><input id="shopName" type="text" name="nameShop">
-		<button id="valid" onclick="addCommande()">Valider</button>
-		<div id="errordiv"></div>
-			<p style="color: #FF0000 " class="error">Veuillez saisir un nom de magasin</p>
 
-		<script type="text/javascript">
-			/*TODO a mettre dans un autre fichier
-			 * + faire le style
-			 */
-			$('.error').hide();
+		<div class="title center">
+			<h1>Commande magasin</h1>
+		</div>
+		<div class="gauche"></div>
+		<div class="shop center">
+			<label for="nameShop">Nom du magasin : </label><input id="nameShop" type="text" name="nameShop">
+			<button id="valid" class="btn" onclick="addCommande()">Valider</button>
+		</div>
+		<div class="droite"></div>
+		<div id="errordiv">
+			<p class="error hide">Veuillez saisir un nom de magasin</p>
+		</div>
 
-			function addCommande(){
-				if($('#shopName').val() === "" || $('#shopName').val() === null){
-					$('.error').show();
-				}
-				else{
-					$('.error').hide();
-					for(let i = 0; i < 1000; i++){
-						console.log("Magasin " + $('#shopName').val() + " Commande : " + i);
-					}
-				}
-			}
-
-		</script>
-
+	  	<footer>
+	        <div class="center">
+	        	<p>Développer par 
+	        		<strong>CECOTTI Alessandro</strong><span>, </span>
+	        		<strong>HALLEUX Alexandre</strong><span> & </span>
+	        		<strong>VIANDIER Grégory</strong>
+	        	</p>
+	        </div>
+	    </footer>
 	</body>
 </html>
