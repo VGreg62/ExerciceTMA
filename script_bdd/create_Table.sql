@@ -26,10 +26,10 @@ CREATE TABLE TCommande
 (
 	NumCommande int NOT NULL AUTO_INCREMENT,
 	NumMagasin int NOT NULL,
-	NumEntrepot varchar(255) NOT NULL,
+	NumEntrepot int NOT NULL,
 	Etat int NOT NULL,
 	PRIMARY KEY (NumCommande),
 	FOREIGN KEY (NumMagasin) REFERENCES TMagasin(NumMagasin),
-	FOREIGN KEY (Etat) REFERENCES TEtat(NumEtat)
+	FOREIGN KEY (Etat) REFERENCES TEtat(NumEtat),
 	FOREIGN KEY (NumEntrepot) REFERENCES TEntrepot(NumEntrepot)
 );
