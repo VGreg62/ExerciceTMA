@@ -19,7 +19,6 @@ function addCommande(){
 		$('.error').addClass("hide");
 		for(let i = 0; i < 1000; i++){
 			console.log("Magasin " + $('#listShop').val() + " Commande : " + i);
-			/*Requete Ajax insert commande*/
 		}
 	}
 }
