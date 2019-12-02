@@ -3,33 +3,35 @@
 INSERT INTO TEtat (NomEtat) 
 VALUES 
 ("Demandé"),
-("En préparation")
+("En préparation"),
 ("Fini"),
 ("Historiser");
-
-/*Ajout de magasin*/
-
-INSERT INTO TMagasin (NomMagasin)
-VALUES
-("Naruto"),
-("Luffy"),
-("Son Goku"),
-("Saitama");
 
 /*Ajout d'entrepot*/
 
 INSERT INTO TEntrepot (NomEntrepot)
 VALUES
-("Sakuke"),
+("Sasuke"),
 ("Sanji"),
 ("Vegeta"),
 ("Genos");
 
+
+/*Ajout de magasin*/
+
+INSERT INTO TMagasin (NomMagasin, NumEntrepot)
+VALUES
+("Naruto", 1),
+("Luffy", 2),
+("Son Goku", 3),
+("Saitama", 4);
+
+
 /*Ajout de commande*/
 
-INSERT INTO TCommande (NumMagasin, NumEntrepot, Etat)
+INSERT INTO TCommande (NumMagasin, Etat)
 VALUES
-(1,1,1),
-(2,2,2),
-(3,3,3),
-(4,4,4);
+(1,1),
+(2,2),
+(3,3),
+(4,4);

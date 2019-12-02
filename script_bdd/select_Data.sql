@@ -27,7 +27,7 @@ ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
 INNER JOIN TEntrepot AS TEn
-ON TC.NumEntrepot = TEn.NumEntrepot
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Demandé";
 
 /*Récupérer les commandes dont l'état est "Demandé" par Entrepot*/
@@ -39,7 +39,7 @@ ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
 INNER JOIN TEntrepot AS TEn
-ON TC.NumEntrepot = TEn.NumEntrepot
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Demandé" AND TEn.NomEntrepot = "Sasuke";
 
 /*Récupérer les commandes dont l'état est "En préparation"*/
@@ -50,6 +50,8 @@ INNER JOIN TEtat AS TE
 ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
+INNER JOIN TEntrepot AS TEn
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "En préparation";
 
 /*Récupérer les commandes dont l'état est "En préparation" par Entrepot*/
@@ -61,7 +63,7 @@ ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
 INNER JOIN TEntrepot AS TEn
-ON TC.NumEntrepot = TEn.NumEntrepot
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "En préparation" AND TEn.NomEntrepot = "Sanji";
 
 /*Récupérer les commandes dont l'état est "Fini"*/
@@ -72,6 +74,8 @@ INNER JOIN TEtat AS TE
 ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
+INNER JOIN TEntrepot AS TEn
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Fini";
 
 /*Récupérer les commandes dont l'état est "Fini" par Entrepot*/
@@ -83,7 +87,7 @@ ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
 INNER JOIN TEntrepot AS TEn
-ON TC.NumEntrepot = TEn.NumEntrepot
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Fini" AND TEn.NomEntrepot = "Vegeta";
 
 /*Récupérer les commandes dont l'état est "Historiser"*/
@@ -94,6 +98,8 @@ INNER JOIN TEtat AS TE
 ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
+INNER JOIN TEntrepot AS TEn
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Historiser";
 
 /*Récupérer les commandes dont l'état est "Historiser" par Entrepot*/
@@ -105,5 +111,5 @@ ON TC.Etat = TE.NumEtat
 INNER JOIN TMagasin AS TM
 ON TC.NumMagasin = TM.NumMagasin
 INNER JOIN TEntrepot AS TEn
-ON TC.NumEntrepot = TEn.NumEntrepot
+ON TM.NumEntrepot = TEn.NumEntrepot
 WHERE TE.NomEtat = "Historiser" AND TEn.NomEntrepot = "Genos";

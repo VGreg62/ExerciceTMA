@@ -1,12 +1,3 @@
-/*Création de la table Produit*/
-
-CREATE TABLE TMagasin
-(
-	NumMagasin int NOT NULL AUTO_INCREMENT,
-	NomMagasin varchar(255) NOT NULL,
-	PRIMARY KEY (NumMagasin)
-);
-
 /*Création de la table Etat*/
 
 CREATE TABLE TEtat
@@ -24,16 +15,25 @@ CREATE TABLE TEntrepot(
 	PRIMARY KEY (NumEntrepot)
 );
 
+/*Création de la table Magasin*/
+
+CREATE TABLE TMagasin
+(
+	NumMagasin int NOT NULL AUTO_INCREMENT,
+	NomMagasin varchar(255) NOT NULL,
+	NumEntrepot int NOT NULL,
+	PRIMARY KEY (NumMagasin),
+	FOREIGN KEY (NumEntrepot) REFERENCES TEntrepot(NumEntrepot)
+);
+
 /*Création de la table Commande*/
 
 CREATE TABLE TCommande
 (
 	NumCommande int NOT NULL AUTO_INCREMENT,
 	NumMagasin int NOT NULL,
-	NumEntrepot int NOT NULL,
 	Etat int NOT NULL,
 	PRIMARY KEY (NumCommande),
 	FOREIGN KEY (NumMagasin) REFERENCES TMagasin(NumMagasin),
-	FOREIGN KEY (Etat) REFERENCES TEtat(NumEtat),
-	FOREIGN KEY (NumEntrepot) REFERENCES TEntrepot(NumEntrepot)
+	FOREIGN KEY (Etat) REFERENCES TEtat(NumEtat)
 );
