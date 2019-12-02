@@ -16,14 +16,21 @@ body{
 	text-align: center;
 }
 
+.container{
+	width: 300px;
+	margin: auto;
+}
+
+
 .title{
+	color: 
 	width: 100%;
 	height: auto;
 	margin-top: 1vw;
 }
 
 .title h1{
-	color: #222;
+	color:#E46804;
 	font-size: 50px;
 }
 
@@ -42,6 +49,7 @@ body{
 }
 
 .shop{
+	padding: 20px;
 	border: 1px solid #757575;
 	background-color: #F6F6F6;
 	margin-left: 33%;
@@ -64,11 +72,11 @@ body{
 
 .btn{
 	width: 100%;
-	height: 25px;
+	height: 35px;
 	background-color: #E46804;
-	border: 1px solid #;
 	color: #FFF;
-	float: right;
+	border: 1px solid #757575;
+
 }
 
 .btn:hover{
@@ -100,11 +108,12 @@ body {
 }
 
 nav{
-	background-color: #fff;
-	border-bottom: 1px solid #ccc;
+	border: 1px solid #757575;
+    background-color: #F6F6F6;
 }
 
 nav h1{
+	color: #E46804;
 	font-size: 2em;
     margin: 10px 0 10px 0;
 }
@@ -119,8 +128,36 @@ footer{
 	border-top: 1px solid #ccc;
 	display: block;
 	bottom: 0px;
-	padding-top: 10px;
 	left: 0px;
 	width: 100%;
 	height: 50px;
+}
+
+.footer{
+	padding-top: 20px;
+}
+
+select {
+	font-size: 1.2em;
+	margin-bottom: 30px;
+	width: 200px;
+}
+
+.absolutePosition{
+	position: absolute;
+}
+
+#tables h5 {
+	color: #e46804;
+	margin: 10px 0 20px;
+	text-align: center;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
 }
