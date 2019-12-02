@@ -11,6 +11,6 @@ function addCommande(){
 }
 
 /* TODO
- * Faire la connextion à la bdd
+ * Faire la connexion à la bdd
  * Faire la connexion Ajax
  */

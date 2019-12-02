@@ -2,8 +2,8 @@
 
 INSERT INTO TEtat (NomEtat) 
 VALUES 
-("Commandé"),
-("Pris en cours")
-("En Livraison"),
-("Livré");
+("Valider"),
+("Commencer")
+("Prêt à envoyer"),
+("Envoyer");
 
