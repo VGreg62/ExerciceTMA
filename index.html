@@ -4,8 +4,10 @@
 		<title>Gestionnaire de commande</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="./css/style.css">
-		<link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="icon" href="./img/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
     </head>
     <header>
         <div class="row">
@@ -15,7 +17,7 @@
 	<body>
         <div class="row">
         	<h2>Valider</h2>
-            <table style="float: left; white-space: 50%;">
+            <table id="table_valider" style="width: 50%;" class="display">
                 <thead>
                     <tr>
                         <th></th>
@@ -42,16 +44,16 @@
                         <td>Auchan</td>
                         <td>0</td>
                         <td>
-                            <button class="favorite styled" type="button">ACCEPTER</button>
+                            <button class="favorite styled" type="button">Accepter</button>
                         </td>
                         <td>
-                            <button class="favorite styled" type="button">REFUSER</button>
+                            <button class="favorite styled" type="button">Refuser</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            <h2>Commencer</h2>
-            <table style="width: auto;">
+            <h2>Pré-préparation</h2>
+            <table id="table_commencer" style="width: 50%;">
                 <thead>
                     <tr>
                         <th></th>
@@ -70,20 +72,19 @@
                         <td>0000002</td>
                         <td>Pasta</td>
                         <td>98</td>
-                        <td>1</td>
                         <td>
-                            <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                            <button class="favorite styled" type="button">Commencer à préparer</button>
                         </td>
                         <td>
-                            <button class="favorite styled" type="button">ETAPE PRECEDENTE</button>
+                            <button class="favorite styled" type="button">Etape précédente</button>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div class="row">
-        	<h2>Prêt à envoyer</h2>
-            <table style="float: left; white-space: 50%;">
+        	<h2>Fin préparation</h2>
+            <table id="table_preparer">
                 <thead>
                     <tr>
                         <th></th>
@@ -91,6 +92,7 @@
                         <th>Produit</th>
                         <th>Magasin</th>
                         <th>Etat</th>
+                        <th>Quantité</th>
                         <th>Validation</th>
                         <th>Annulation</th>
                     </tr>
@@ -104,17 +106,18 @@
                             <td>Pasta</td>
                             <td>98</td>
                             <td>2</td>
+                            <td>300</td>
                             <td>
-                                <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                                <button class="favorite styled" type="button">Valider l'envoi</button>
                             </td>
                             <td>
-                                <button class="favorite styled" type="button">ETAPE PRECEDENTE</button>
+                                <button class="favorite styled" type="button">Etape précédente</button>
                             </td>
                         </tr>
                     </tbody>
             </table>
             <h2>Envoyer</h2>
-            <table style="width: auto;">
+            <table id="table_envoyer" style="width: auto;">
                 <thead>
                     <tr>
                         <th></th>
@@ -122,8 +125,8 @@
                         <th>Produit</th>
                         <th>Magasin</th>
                         <th>Etat</th>
-                        <th>Validation</th>
-                        <th>Annulation</th>
+                        <th>Envoyer</th>
+                        <th>Complêter</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -131,15 +134,16 @@
                             <td>
                                 <input type="checkbox" id="scales" name="scales" checked>
                             </td>
-                            <td>0000002</td>
+                            <td>
+                                0000002</td>
                             <td>Pasta</td>
                             <td>98</td>
                             <td>3</td>
                             <td>
-                                <button class="favorite styled" type="button">ETRAPE SUIVANTE</button>
+                                <button class="favorite styled" type="button">Envoyer</button>
                             </td>
                             <td>
-                                <button class="favorite styled" type="button">ENVOYER</button>
+                                <button class="favorite styled" type="button">Complêter</button>
                             </td>
                         </tr>
                     </tbody>
@@ -156,3 +160,13 @@
 	    </footer>
     </body>
 </html>
+
+<script type="text/javascript">
+$(document).ready( function () {
+    $('#table_valider').DataTable();
+    $('#table_commencer').DataTable();
+    $('#table_preparer').DataTable();
+    $('#table_envoyer').DataTable();
+} );
+
+</script>
