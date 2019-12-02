@@ -3,7 +3,7 @@ CREATE TABLE TProduit
 (
 	NumProduit int NOT NULL AUTO_INCREMENT,
 	NomProduit varchar(255) NOT NULL,
-	PRIMARY KEY (NumProduit),
+	PRIMARY KEY (NumProduit)
 );
 
 /*Création de la table Etat*/
@@ -11,7 +11,7 @@ CREATE TABLE TEtat
 (
 	NumEtat int NOT NULL AUTO_INCREMENT,
 	NomEtat varchar(255) NOT NULL,
-	PRIMARY KEY (NumEtat),
+	PRIMARY KEY (NumEtat)
 );
 
 /*Création de la table Commande*/
