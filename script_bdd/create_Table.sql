@@ -1,4 +1,5 @@
 /*Création de la table Produit*/
+
 CREATE TABLE TMagasin
 (
 	NumMagasin int NOT NULL AUTO_INCREMENT,
@@ -7,6 +8,7 @@ CREATE TABLE TMagasin
 );
 
 /*Création de la table Etat*/
+
 CREATE TABLE TEtat
 (
 	NumEtat int NOT NULL AUTO_INCREMENT,
@@ -15,6 +17,7 @@ CREATE TABLE TEtat
 );
 
 /*Création de la table Entrepot*/
+
 CREATE TABLE TEntrepot(
 	NumEntrepot int NOT NULL AUTO_INCREMENT,
 	NomEntrepot varchar(255) NOT NULL,
@@ -22,6 +25,7 @@ CREATE TABLE TEntrepot(
 );
 
 /*Création de la table Commande*/
+
 CREATE TABLE TCommande
 (
 	NumCommande int NOT NULL AUTO_INCREMENT,
