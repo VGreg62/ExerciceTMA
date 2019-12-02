@@ -79,6 +79,11 @@ body{
 
 
 
+.borderTable{
+	border: 1px solid #ddd;
+}
+
+
 body {
 	height: 100%;
 	position:absolute; 
