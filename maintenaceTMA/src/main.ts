@@ -12,10 +12,8 @@ platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
   export class ClickMeComponent {
-    clickMessage = '';
   
     onClickMe() {
-      this.clickMessage = 'You are my hero!';
       console.log("click");
     }
   }
