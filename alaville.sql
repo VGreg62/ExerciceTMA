@@ -49,3 +49,15 @@ INSERT INTO PRODUIT(nom, prix) VALUES ('Vatrouchka',1.7);
 INSERT INTO PRODUIT(nom, prix) VALUES ('Chapka',1.8);
 INSERT INTO PRODUIT(nom, prix) VALUES ('K-Way',1.9);
 INSERT INTO PRODUIT(nom, prix) VALUES ('Bortsch',1.0);
+
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (1,1,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (2,1,2,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (3,1,3,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (4,3,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (5,1,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (6,1,3,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (7,2,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (8,1,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (9,1,1,'2019-01-01',1);
+INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (10,1,1,'2019-01-01',1);
+
