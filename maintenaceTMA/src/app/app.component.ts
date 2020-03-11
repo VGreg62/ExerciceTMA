@@ -1,4 +1,10 @@
 import { Component } from '@angular/core';
+import {SelectItem} from 'primeng/api';
+
+interface City {
+  name: string;
+  code: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -8,8 +14,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'maintenaceTMA';
 
-
   onClickMe() {
-    
   }
 }
