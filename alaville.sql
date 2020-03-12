@@ -1,7 +1,10 @@
 CREATE TABLE CLIENT(
 	idClient INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	nom varchar(255),
-	prenom varchar(255)
+	prenom varchar(255),
+	numTel varchar(10),
+	mail varchar(255),
+
 );
 
 CREATE TABLE MAGASIN(
@@ -61,3 +64,6 @@ INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES 
 INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (9,1,1,'2019-01-01',1);
 INSERT INTO COMMANDE(idProduit, idMagasin, idClient, dateAchat,quantite) VALUES (10,1,1,'2019-01-01',1);
 
+ALTER TABLE CLIENT 
+ADD Mail varchar(255),
+ADD Tel varchar(10);
