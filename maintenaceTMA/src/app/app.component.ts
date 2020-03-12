@@ -14,6 +14,4 @@ interface City {
 export class AppComponent {
   title = 'maintenaceTMA';
 
-  onClickMe() {
-  }
 }
